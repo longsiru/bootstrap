@@ -4,16 +4,72 @@
   box-sizing: border-box;
 }
 
+ul li {
+  list-style: none;
+}
+
 body {
-  background-color: #f0f1f4;
+  background-color: antiquewhite;
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   color: #737b8a;
 }
 
+.container-fluid {
+  padding: 0;
+}
+
+.nav-icon-choose-a {
+  display: flex;
+  align-items: center;
+}
+
+.nav-icon-choose-a > li {
+  padding-top: 10px;
+  position: relative;
+  list-style: none;
+}
+
+.nav-icon-choose-a > li > a {
+  display: flex;
+  align-items: center;
+  padding: 6px 19px 6px 6px;
+  border-radius: 5px;
+  margin-right: 20px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.nav-icon-choose-a > li > a img {
+  margin-right: 12px;
+}
+
+.nav-icon-choose-a > li:hover .nav-item-submenu {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+}
+
+.navbar-nav {
+  padding-bottom: 40px;
+}
+.nav-item-icon {
+  padding-top: 10px;
+}
+/*  */
+
 .first-nav {
   width: 1400px;
   margin: 0 auto;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.nav-main-form {
+  width: 50%;
+  padding-top: 10px;
 }
 
 .second-nav {
@@ -21,9 +77,49 @@ body {
   margin: 0 auto;
 }
 
+.second-nav-sub {
+  width: 100%;
+  display: flex;
+}
+
+.nav-sub-menu {
+  padding-left: 20px;
+  width: 50%;
+}
+
+.menu-contact-a {
+  padding-right: 50px;
+  float: right;
+}
+
+.menu-contact-etc {
+  display: flex;
+  float: right;
+  padding-top: 30px;
+  padding-right: 20px;
+}
+
+.btn-secondary {
+  height: 68px;
+  color: black;
+  background-color: antiquewhite;
+  border-color: white;
+}
+
+.form-control {
+  line-height: 40px;
+}
+
+.nav {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .nav-item {
   height: 50px;
   line-height: 50px;
+  padding-top: 10px;
 }
 .nav-item > ul > li {
   position: relative;
@@ -50,6 +146,10 @@ body {
   top: 100%;
 }
 
+.nav-item-icon {
+  padding-top: 10px;
+}
+
 .nav-item-submenu {
   position: relative;
   /* left: 0px; */
@@ -70,10 +170,6 @@ body {
   height: 40px;
 }
 
-.nav-item-icon ul {
-  margin-left: 50px;
-}
-
 .nav-item-icon li {
   display: inline;
 }
@@ -82,7 +178,7 @@ body {
   line-height: 40px;
   color: bisque;
   text-decoration: none;
-  padding: 20px 20px;
+  padding: 10px;
 }
 
 .nav-item-icon a:hover {
@@ -100,25 +196,10 @@ body {
 }
 
 .section-one {
-  background-color: #737b8a;
+  background-color: white;
   padding-bottom: 20px;
   width: 1400px;
   margin: 0 auto;
-}
-
-.section-two {
-  background-color: aqua;
-  padding-bottom: 20px;
-}
-
-.section-three {
-  background-color: #737b8a;
-  padding-bottom: 20px;
-}
-
-.section-four {
-  background-color: bisque;
-  padding-bottom: 20px;
 }
 
 .section-five {
@@ -143,11 +224,11 @@ body {
 
 .banner-slider-one {
   height: 50%;
-  padding: 0px 20px 10px 10px;
+  padding: 0px 0px 10px 10px;
 }
 .banner-slider-two {
   height: 50%;
-  padding: 10px 20px 0 10px;
+  padding: 10px 0px 0 10px;
 }
 .banner-slider-one_sub {
   width: 100%;
@@ -168,4 +249,177 @@ body {
 .text-one {
   padding-left: 20px;
   padding-top: 15px;
+}
+
+.section-two {
+  background-color: white;
+  padding-bottom: 20px;
+  width: 1400px;
+  margin: 0 auto;
+  border-bottom: #97989a 1px solid;
+}
+
+.custom-row {
+  display: flex;
+}
+
+.section-three {
+  background-color: white;
+  padding-bottom: 20px;
+  width: 1400px;
+  margin: 0 auto;
+  border-bottom: #97989a 1px solid;
+}
+
+.section-four {
+  background-color: white;
+  padding-bottom: 20px;
+  width: 1400px;
+  margin: 0 auto;
+  border-bottom: #97989a 1px solid;
+}
+
+.container {
+  max-width: 1400px;
+}
+
+.container-slider {
+  width: 1400px;
+  height: 80vh;
+}
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.slider {
+  height: 500px;
+  width: 1320px;
+  display: flex;
+  perspective: 1000px;
+  position: absolute;
+  align-items: center;
+}
+
+.box1 {
+  background: url("/images/slider/instagram-01.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.box2 {
+  background: url("/images/slider/instagram-02.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.box3 {
+  background: url("/images/slider/instagram-03.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.box4 {
+  background: url("/images/slider/instagram-04.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.box5 {
+  background: url("/images/slider/instagram-05.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.box6 {
+  background: url("/images/slider/instagram-06.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.box7 {
+  background: url("/images/slider/instagram-07.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.slider [class*="box"] {
+  /*   float: left; */
+  overflow: hidden;
+  border-radius: 20px;
+  transition: all 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  position: absolute;
+}
+.slider [class*="box"]:nth-child(7),
+.slider [class*="box"]:nth-child(1) {
+  width: 100vh;
+  height: 60vh;
+  transform: scale(0.2) translate(-50%, -50%);
+  top: 10%;
+  z-index: 1;
+}
+.slider [class*="box"]:nth-child(2),
+.slider [class*="box"]:nth-child(6) {
+  width: 100vh;
+  height: 60vh;
+  transform: scale(0.4) translate(-50%, -50%);
+  top: 20%;
+  z-index: 2;
+}
+.slider [class*="box"]:nth-child(3),
+.slider [class*="box"]:nth-child(5) {
+  width: 100vh;
+  height: 60vh;
+  transform: scale(0.6) translate(-50%, -50%);
+  top: 30%;
+  z-index: 3;
+}
+.slider [class*="box"]:nth-child(4) {
+  width: 60vw;
+  height: 60vh;
+  border-color: #c92026;
+  color: #fff;
+  transform: scale(1) translate(-50%, -50%);
+  top: 50%;
+  z-index: 4;
+}
+.slider [class*="box"]:nth-child(1) {
+  left: -13%;
+}
+.slider [class*="box"]:nth-child(2) {
+  left: -5%;
+}
+.slider [class*="box"]:nth-child(3) {
+  left: 10%;
+}
+.slider [class*="box"]:nth-child(4) {
+  left: 50%;
+}
+.slider [class*="box"]:nth-child(5) {
+  left: 71%;
+}
+.slider [class*="box"]:nth-child(6) {
+  left: 85%;
+}
+.slider [class*="box"]:nth-child(7) {
+  left: 100%;
+}
+.slider .firstSlide {
+  -webkit-animation: firstChild 1s;
+  animation: firstChild 1s;
+}
+/*Animation for buyers landing page slider*/
+@-webkit-keyframes firstChild {
+  0% {
+    left: 100%;
+    transform: scale(0.2) translate(-50%, -50%);
+  }
+  100% {
+    left: -13%;
+    transform: scale(0.2) translate(-50%, -50%);
+  }
+}
+@keyframes firstChild {
+  0% {
+    left: 100%;
+    transform: scale(0.2) translate(-50%, -50%);
+  }
+  100% {
+    left: -13%;
+    transform: scale(0.2) translate(-50%, -50%);
+  }
 }
